@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.4.RELEASE</version>
+    </parent>
+
+    <groupId>com.bekiratas</groupId>
+    <artifactId>shopping-cart-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.bekiratas</groupId>
+                <artifactId>shopping-cart-app</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.bekiratas</groupId>
+                <artifactId>shopping-cart-intf</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.bekiratas</groupId>
+                <artifactId>shopping-cart-model</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.bekiratas</groupId>
+                <artifactId>shopping-cart-service</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.bekiratas</groupId>
+                <artifactId>shopping-cart-util</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
+
+    <modules>
+        <module>shopping-cart-app</module>
+        <module>shopping-cart-model</module>
+        <module>shopping-cart-util</module>
+        <module>shopping-cart-service</module>
+        <module>shopping-cart-intf</module>
+    </modules>
+
+</project>
